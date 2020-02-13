@@ -61,10 +61,7 @@ a:visited {
   filter: brightness(155%);
   color: #2c5364;
 }
-main {
-  color: red;
-  flex: 1;
-}
+
 footer {
   color: red;
 }
