@@ -33,7 +33,7 @@
 }
 
 header {
-  font-family: "Varela", sans-serif;
+  font-family: 'Varela', sans-serif;
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -94,17 +94,93 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Varela", sans-serif;
+  font-family: 'Varela', sans-serif;
   text-align: center;
   vertical-align: middle;
-  background: #6e6d6d;
+  background: #4b4040;
   width: 100%;
   color: #fff;
   height: 40px;
 }
 
-.tag {
-  padding: 5px;
-  background-color: #76ff03;
-  margin: 2.5px;
+#lynker-img {
+  background-image: url(../imgs/project-imgs/lynker.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+#sorting-img {
+  background-image: url(../imgs/project-imgs/sorting-visualizer.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+#hexgame-img {
+  background-image: url(../imgs/project-imgs/hexgame.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+#wisdom-img {
+  background-image: url(../imgs/project-imgs/wisdom-generator.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+#simply-img {
+  background-image: url(../imgs/project-imgs/simply-muscle.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+#mymalloc-img {
+  background-image: url(../imgs/project-imgs/mymalloc.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+
+#hexclock-img {
+  background-image: url(../imgs/project-imgs/hexclock.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+
+#simply-img {
+  background-image: url(../imgs/project-imgs/simply-muscle.png);
+  vertical-align: bottom;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
 }
