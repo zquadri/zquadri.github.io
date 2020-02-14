@@ -112,6 +112,7 @@ main {
   height: 210px;
   width: 350px;
   display: block;
+  text-decoration: none;
 }
 #sorting-img {
   background-image: url(../imgs/project-imgs/sorting-visualizer.png);
@@ -184,4 +185,8 @@ main {
   background-repeat: no-repeat;
   height: 210px;
   width: 350px;
+}
+
+a {
+  text-decoration: none;
 }
