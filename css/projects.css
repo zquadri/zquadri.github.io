@@ -13,18 +13,16 @@
   display: flex;
   flex-direction: column;
 
-  background: #0f2027; /* fallback for old browsers */
+  background: #8e0e00; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #2c5364,
-    #203a43,
-    #0f2027
+    #1f1c18,
+    #8e0e00
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #2c5364,
-    #203a43,
-    #0f2027
+    #1f1c18,
+    #8e0e00
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-size: cover;
@@ -33,7 +31,7 @@
 }
 
 header {
-  font-family: "Varela", sans-serif;
+  font-family: 'Varela', sans-serif;
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -62,12 +60,8 @@ a:visited {
 .navbar li a:hover {
   filter: brightness(155%);
   padding-bottom: 7px;
-  color: #2c5364;
-  border-bottom: 1px solid #2c5364;
-}
-
-body {
-  padding: 1px;
+  color: #000;
+  border-bottom: 1px solid #000;
 }
 
 main {
@@ -90,21 +84,107 @@ main {
   border-radius: 7px;
 }
 
+.card:hover {
+  transform: translate(0, -20px);
+  transition: 0.3s ease-in-out;
+}
+
 .card-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Varela", sans-serif;
+  font-family: 'Varela', sans-serif;
   text-align: center;
   vertical-align: middle;
-  background: #6e6d6d;
+  background: #0b0a1d;
   width: 100%;
   color: #fff;
   height: 40px;
 }
 
-.tag {
-  padding: 5px;
-  background-color: #76ff03;
-  margin: 2.5px;
+#lynker-img {
+  background-image: url(../imgs/project-imgs/lynker.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+  text-decoration: none;
+}
+#sorting-img {
+  background-image: url(../imgs/project-imgs/sorting-visualizer.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+#hexgame-img {
+  background-image: url(../imgs/project-imgs/hexgame.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+#wisdom-img {
+  background-image: url(../imgs/project-imgs/wisdom-generator.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  font-size: 0;
+  line-height: 0;
+  display: block;
+}
+
+#simply-img {
+  background-image: url(../imgs/project-imgs/simply-muscle.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+#mymalloc-img {
+  background-image: url(../imgs/project-imgs/mymalloc.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+
+#hexclock-img {
+  background-image: url(../imgs/project-imgs/hexclock.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+  display: block;
+}
+
+#simply-img {
+  background-image: url(../imgs/project-imgs/simply-muscle.png);
+  vertical-align: bottom;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+  width: 350px;
+}
+
+a {
+  text-decoration: none;
 }
