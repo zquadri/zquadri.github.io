@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row div {
+  -webkit-flex: 0 1 auto;
+  flex: 0 1 auto;
+  flex-shrink: 0;
+}
+
+.col-1 {
+  flex: 0 0 calc(100% / 4 * 1);
+}
+
+.col-2 {
+  flex: 0 0 calc(100% / 4 * 2);
+}
+
+.col-3 {
+  flex: 0 0 calc(100% / 4 * 3);
+}
+
+.col-4 {
+  flex: 0 0 calc(100% / 4 * 4);
+}

@@ -1,0 +1,38 @@
+.container {
+  margin-top: 200px;
+  width: 100%;
+}
+
+.content {
+  width: 65%;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  line-height: 55px;
+  font-size: 1.5rem;
+  width: 500px;
+}
+.heading {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.portrait {
+  clip-path: circle();
+  width: 400px;
+}
+
+.introduction {
+  font-weight: 300;
+  color: var(--faded-text-color);
+  margin-bottom: 1rem;
+}
