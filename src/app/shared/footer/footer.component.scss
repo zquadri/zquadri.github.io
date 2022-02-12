@@ -1,6 +1,9 @@
 footer {
-  width: 65%;
-  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0.5rem;
 }
 .copyrightSection {
   padding: 10px 5px;

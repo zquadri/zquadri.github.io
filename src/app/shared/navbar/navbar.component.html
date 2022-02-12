@@ -4,12 +4,14 @@
       <span id="bold-name">Zaid </span><span>Quadri</span>
     </div>
     <ul class="parent-navigation">
-      <li><a href="">Home</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Resumé</a></li>
+      <li><a routerLink="/" href="">Home</a></li>
+      <li><a [routerLink]="['/blogs']" href="">Blog</a></li>
+      <li><a routerLink="projects" href="">Projects</a></li>
+      <li><a href="assets/resume.pdf">Resumé</a></li>
     </ul>
-    <button class="contact-button">Contact Me</button>
+    <a class="contact-button contact-link" href="mailto:zquadri98@gmail.com"
+      >Contact Me</a
+    >
   </nav>
   <hr />
 </div>
