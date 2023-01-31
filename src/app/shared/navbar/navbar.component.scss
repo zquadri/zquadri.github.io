@@ -1,12 +1,14 @@
 nav {
   display: flex;
-  font-size: 1.1rem;
+  font-size: 1rem;
   justify-content: space-between;
-  width: 65%;
   margin: 0 auto;
   align-items: center;
   color: var(--white);
-  padding: 3em;
+  padding: 2em;
+}
+#colorpicker {
+  cursor: pointer;
 }
 #bold-name {
   color: var(--color-primary);
@@ -21,23 +23,30 @@ hr {
   background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.08;
+  position: relative;
+  transition-duration: 500ms;
 }
 
-.parent-navigation {
+.nav-menu {
   display: flex;
   text-decoration: none;
   list-style: none;
   text-decoration: none;
+  gap: 20px;
 }
 
-.parent-navigation li:not(:last-child) {
-  margin-right: 40px;
-}
-
-.parent-navigation li a {
+.nav-menu li a {
   text-transform: uppercase;
   color: var(--white);
   text-decoration: none;
+}
+
+.nav-menu li a:hover {
+  color: var(--color-primary);
+}
+
+.active-link {
+  font-weight: bold;
 }
 
 .contact-button {
@@ -63,8 +72,56 @@ hr {
   color: rgb(217, 251, 251);
 }
 
-@media screen and (max-width: 400px) {
-  nav {
-    color: var(--white);
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    transition-duration: 500ms;
+  }
+  .nav-menu {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    top: 75px;
+    gap: 9px;
+    text-align: center;
+    left: -100%;
+    font-size: var(--text-size-small);
+  }
+  .nav-menu.active {
+    position: absolute;
+    transition-duration: 500ms;
+    left: 0;
+  }
+  .nav-menu .nav-item a {
+    color: #fff;
+  }
+
+  hr.active {
+    margin-top: 100px;
+    transition-duration: 500ms;
+  }
+
+  .hamburger.active {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition-duration: 500ms;
   }
 }

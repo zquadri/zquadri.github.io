@@ -1,8 +1,8 @@
 .social-menu {
-  margin-top: 1em;
+  margin-top: 2em;
   display: flex;
   list-style: none;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .social-menu li {
@@ -15,22 +15,26 @@
   position: relative;
   display: block;
   text-align: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: transparent;
-  outline: 1px solid var(--color-primary);
+  outline: 2px solid var(--color-primary);
+}
+
+.social-menu a:hover {
+  outline: none;
+  background: var(--color-primary);
+  .fa {
+    transform: translate(0, -4px);
+    transition: 0.1s ease-in;
+    color: rgb(217, 251, 251);
+  }
 }
 
 .fa {
-  font-size: 30px;
-  line-height: 60px;
+  font-size: 20px;
+  line-height: 40px;
   transition: 0.6s;
   color: var(--color-primary);
-}
-
-.fa:hover {
-  transform: translate(0, -8px);
-  transition: 0.1s ease-in;
-  color: rgb(217, 251, 251);
 }

@@ -1,17 +1,47 @@
 <div class="nav-container">
   <nav>
     <div class="brand">
+      <input
+        type="color"
+        style="opacity: 0; width: 100px; position: absolute"
+        (input)="test($event)"
+        id="colorpicker"
+        value="#F2455F"
+      />
+
       <span id="bold-name">Zaid </span><span>Quadri</span>
     </div>
-    <ul class="parent-navigation">
-      <li><a routerLink="/" href="">Home</a></li>
-      <li><a [routerLink]="['/blogs']" href="">Blog</a></li>
-      <li><a routerLink="projects" href="">Projects</a></li>
-      <li><a href="assets/resume.pdf">Resumé</a></li>
+    <ul [ngClass]="{ 'nav-menu': true, active: isActive }">
+      <li class="nav-item">
+        <a
+          routerLink="/"
+          href=""
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          href="https://medium.com/@zquadri98"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Blog
+        </a>
+      </li>
+      <li class="nav-item"><a href="assets/zq-resume.pdf">Resumé</a></li>
+      <li class="nav-item"><a href="mailto:zquadri98@gmail.com">Contact</a></li>
     </ul>
-    <a class="contact-button contact-link" href="mailto:zquadri98@gmail.com"
-      >Contact Me</a
+
+    <div
+      (click)="isActive = !isActive"
+      [ngClass]="{ hamburger: true, active: isActive }"
     >
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
   </nav>
-  <hr />
+  <hr [ngClass]="{ active: isActive }" />
 </div>

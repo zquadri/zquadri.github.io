@@ -1,7 +1,15 @@
 :root {
-  --main-background-color: #19191b;
-  --color-primary: #00ffff;
+  --main-background-color: #16161b;
+  --color-primary: rgb(242, 69, 95);
   --white: #fff;
   --black: #000;
-  --faded-text-color: rgba(255, 255, 255, 0.7);
+  --faded-text-color: rgba(255, 255, 255, 0.85);
+
+  --text-size-xsmall: 0.7rem;
+  --text-size-small: 0.85rem;
+  --text-size-normal: 1rem;
+  --text-size-medium: 1.15rem;
+  --text-size-large: 1.5rem;
+  --text-size-xlarge: 2rem;
+  --text-size-xxlarge: 2.5rem;
 }
